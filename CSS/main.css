@@ -27,13 +27,7 @@ border-right:1px solid white;
 a:hover {background-color:#00FFBF;}
 li {display:inline;}
 
-img {
-  width:250px;
-  height:190px;
-  border: solid 0.125em black;
-  padding: 0%;
-  margin: 1%;
-}
+
 
  /*height:120px*/
 
@@ -49,12 +43,47 @@ p{
   width: 75%;
   min-height: 100px;
   margin: 0 auto;
+  /*clear:both;*/
+}
+
+.row{
+  clear: both;
+  background-color:#1C1C1C;
+}
+
+.col2{
+  float:left;
+  width:25%;
+   background-color: none; /*was yellow*/
+
+}
+
+.inner-row{
+  float: left;
+  margin:1%;
+  background-color: none;
+  margin:2.5%; /*was red*/
+}
+
+.inner-row img {
+  width: 97%;
+  height:100%;
+  border:2px solid black;
+  /*
+  width:250px;
+  height:190px;
+  border: solid 0.125em black;
+  padding: 0%;
+  margin: 1%;
+  */
+}
+
+img{
+  width:250px;
+  height:190px;
 }
 
 
 
 
 
-ff3300
-
-<a href="#"><a>
