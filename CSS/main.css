@@ -1,0 +1,60 @@
+body{
+  background-color:#1C1C1C
+}
+
+h1{
+  font-family:Orator Std;
+  color:#F2F2F2;
+    text-align:left
+}
+ul
+{
+float:center;
+width:100%;
+padding:0;
+margin:0;
+}
+li
+{
+ font-family:Orator Std;
+width:6em;
+text-decoration:none;
+color:white;
+background-color:#1C1C1C;
+padding:0.2em 0.6em;
+border-right:1px solid white;
+}
+a:hover {background-color:#00FFBF;}
+li {display:inline;}
+
+img {
+  width:250px;
+  height:190px;
+  border: solid 0.125em black;
+  padding: 0%;
+  margin: 1%;
+}
+
+ /*height:120px*/
+
+p{
+  font-family:MS Reference Sans serif;
+  color:#F2F2F2;
+  font-size: 12px;
+  padding: 1%
+ }
+
+ .container {
+  background-color: grey;
+  width: 75%;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+
+
+
+
+ff3300
+
+<a href="#"><a>
