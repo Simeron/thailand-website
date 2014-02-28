@@ -5,14 +5,16 @@ body{
 h1{
   font-family:Orator Std;
   color:#F2F2F2;
-    text-align:left
+    text-align:center;
 }
 ul
 {
 float:center;
 width:100%;
 padding:0px;
-margin:0;
+margin:0 auto;
+position: relative;
+left: 25%;
 }
 li
 {
@@ -24,10 +26,12 @@ background-color:#1C1C1C;
 padding:0.2em 0.6em;
 border-right:1px solid white;
 }
-a:hover {background-color:#1C1C1C;} /* use to be #00ffbf */ 
+
 li {display:inline;}
 
-
+li:first-child{
+border-left: 1px solid white;
+}
 
 
  /*height:120px*/
@@ -35,8 +39,8 @@ li {display:inline;}
 p{
   font-family:MS Reference Sans serif;
   color:#F2F2F2;
-  font-size: 12px;
-  padding: 1%
+  font-size: 80%; /*12px*/
+  padding: 1%;
  }
 
  .container {
@@ -50,6 +54,7 @@ p{
 .row{
   clear: both;
   background-color:grey;
+  overflow:hidden;
 }
 
 .col2{
@@ -80,10 +85,10 @@ p{
   */
 }
 
-img{
+/*img{
   width:250px;
-  height:190px;
-}
+  height:190px; 
+}*/
 
 .title{
   background-color:#1C1C1C;
@@ -91,8 +96,8 @@ img{
   z-index: 100;
 }
 
-.thumbnail{ border: 5px solid #ccc; float: left; margin: 15px; -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out; }
-.thumbnail:hover { margin-top: 2px; }
+.thumbnail{ float: left; -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out; }
+.thumbnail:hover { margin-top: -5%; }
 
 /*http://designshack.net/?p=19746    (this is where the effect came from)*/
 
@@ -103,14 +108,18 @@ img{
 }
 .image .text {
     position:absolute;
-    bottom:17px; /* in conjunction with left property, decides the text position */
-    left:17px;
-    width:246px; /* optional, though better have one, (the width use to be 300px I changed it or 246 is a perfect fit for the text box)*/
+    bottom:5%; /*in conjunction with left property, decides the text position*/
+    /*left:17px;*/
+    width:98%; /* optional, though better have one, (the width use to be 300px I changed it or 246 is a perfect fit for the text box)*/
     background-color: #1C1C1C;
     opacity:100%;
 
 
 }/* website used to get the text on the images!! http://www.kavoir.com/2009/02/css-text-over-image.html */
+
+.image p{
+  opacity: 100%;
+}
 
 .pressbox {
   width: 0;
@@ -121,7 +130,7 @@ img{
   top: 0;
   z-index: 9999;
   text-align: center;
-  background: rgba (0,0,0,0,7) ; 
+  background: rgba (0,0,0,7) ; 
   }
 
   .pressbox img {
