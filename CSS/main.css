@@ -11,7 +11,7 @@ ul
 {
 float:center;
 width:100%;
-padding:0;
+padding:0px;
 margin:0;
 }
 li
@@ -24,8 +24,9 @@ background-color:#1C1C1C;
 padding:0.2em 0.6em;
 border-right:1px solid white;
 }
-a:hover {background-color:#00FFBF;}
+a:hover {background-color:#1C1C1C;} /* use to be #00ffbf */ 
 li {display:inline;}
+
 
 
 
@@ -48,7 +49,7 @@ p{
 
 .row{
   clear: both;
-  background-color:#1C1C1C;
+  background-color:grey;
 }
 
 .col2{
@@ -69,6 +70,7 @@ p{
   width: 97%;
   height:100%;
   border:2px solid black;
+  position: relative; 
   /*
   width:250px;
   height:190px;
@@ -83,7 +85,71 @@ img{
   height:190px;
 }
 
+.title{
+  background-color:#1C1C1C;
+  float: none;
+  z-index: 100;
+}
+
+.thumbnail{ border: 5px solid #ccc; float: left; margin: 15px; -webkit-transition: margin 0.5s ease-out; -moz-transition: margin 0.5s ease-out; -o-transition: margin 0.5s ease-out; }
+.thumbnail:hover { margin-top: 2px; }
+
+/*http://designshack.net/?p=19746    (this is where the effect came from)*/
 
 
+.image {
+    position:relative;
+    float:left; /* optional */
+}
+.image .text {
+    position:absolute;
+    bottom:17px; /* in conjunction with left property, decides the text position */
+    left:17px;
+    width:246px; /* optional, though better have one, (the width use to be 300px I changed it or 246 is a perfect fit for the text box)*/
+    background-color: #1C1C1C;
+    opacity:100%;
+
+
+}/* website used to get the text on the images!! http://www.kavoir.com/2009/02/css-text-over-image.html */
+
+.pressbox {
+  width: 0;
+  height: 0;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  text-align: center;
+  background: rgba (0,0,0,0,7) ; 
+  }
+
+  .pressbox img {
+    opacity: 0;
+    padding: 10px;
+    background: #ffffff;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 15px #444;
+    -moz-box-shadow: 0px 0px 15px #444; 
+    box-shadow: 0px 0px 15px #444;  
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    width: 80%;
+    height:80%;   
+    }
+
+.pressbox:target {
+  width: auto; 
+  height: auto;
+  bottom: 0;
+  right: 0;
+  }
+  
+  .pressbox:target img {
+    opacity: 1;
+    }
+
+/* http://bavotasan.com/2012/using-target-to-create-a-lightbox-effect-with-css3/# (this is the website i used to get the lightbox effect on my images)*/ 
 
 
