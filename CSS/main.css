@@ -161,4 +161,18 @@ p{
 
 /* http://bavotasan.com/2012/using-target-to-create-a-lightbox-effect-with-css3/# (this is the website i used to get the lightbox effect on my images)*/ 
 
+.col3{
+  float:left;
+  width:50%;
+  background-color: none;
+}
+
+.col4{
+ float:right;
+  width:25%;
+  background-color: none; 
+}
+
+
+
 
