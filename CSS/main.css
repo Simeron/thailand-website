@@ -9,7 +9,6 @@ h1{
 }
 ul
 {
-float:center;
 width:100%;
 padding:0px;
 margin:0 auto;
@@ -168,11 +167,36 @@ p{
 }
 
 .col4{
- float:right;
-  width:25%;
+ float:left;
+  width:50%;
   background-color: none; 
 }
 
+.col4 .inner-row{
+  margin: 1.25%;
+  background-color: #2E2E2E;
+}
 
+@media (max-width: 500px){
+.col3 {
+  background-color: blue;
+}
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+.col3 {
+  width: 100%;
+}
+.col2{
+  width: 100%;
+}
+.col4{
+  width: 100%;
+}
+
+.menu-link .title{
+  text-decoration: none;
+  color:#F2F2F2;
+}
 
 
