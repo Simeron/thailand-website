@@ -39,6 +39,7 @@ p{
   color:#F2F2F2;
   font-size: 80%; /*12px*/
   padding: 1%;
+  text-align: center;
  }
 
  .container {
@@ -210,3 +211,4 @@ p{
   color: white;
 }
 a:link,a:visited, a:hover, a:active {text-decoration:none;}
+
