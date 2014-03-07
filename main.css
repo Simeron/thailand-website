@@ -9,7 +9,7 @@ h1{
 }
 .title ul
 {
-width:50%;
+width:44%;
 padding:0px;
 margin:0 auto;
 display: block;
@@ -186,7 +186,7 @@ p{
 }
 }
 
-@media (max-width: 800px){
+@media (min-width: 500px) and (max-width: 800px){
 .col3 {
   width: 100%;
 }
